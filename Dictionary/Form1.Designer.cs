@@ -87,9 +87,10 @@ namespace Dictionary
             // 
             // buttonUnit5
             // 
-            this.buttonUnit5.Location = new System.Drawing.Point(480, 12);
+            this.buttonUnit5.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonUnit5.Location = new System.Drawing.Point(480, 7);
             this.buttonUnit5.Name = "buttonUnit5";
-            this.buttonUnit5.Size = new System.Drawing.Size(111, 40);
+            this.buttonUnit5.Size = new System.Drawing.Size(115, 50);
             this.buttonUnit5.TabIndex = 4;
             this.buttonUnit5.Text = "Unit 5";
             this.buttonUnit5.UseVisualStyleBackColor = true;
@@ -97,9 +98,10 @@ namespace Dictionary
             // 
             // buttonUnit4
             // 
-            this.buttonUnit4.Location = new System.Drawing.Point(363, 12);
+            this.buttonUnit4.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonUnit4.Location = new System.Drawing.Point(363, 7);
             this.buttonUnit4.Name = "buttonUnit4";
-            this.buttonUnit4.Size = new System.Drawing.Size(111, 40);
+            this.buttonUnit4.Size = new System.Drawing.Size(115, 50);
             this.buttonUnit4.TabIndex = 3;
             this.buttonUnit4.Text = "Unit 4";
             this.buttonUnit4.UseVisualStyleBackColor = true;
@@ -107,9 +109,10 @@ namespace Dictionary
             // 
             // buttonUnit3
             // 
-            this.buttonUnit3.Location = new System.Drawing.Point(246, 12);
+            this.buttonUnit3.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonUnit3.Location = new System.Drawing.Point(246, 7);
             this.buttonUnit3.Name = "buttonUnit3";
-            this.buttonUnit3.Size = new System.Drawing.Size(111, 40);
+            this.buttonUnit3.Size = new System.Drawing.Size(115, 50);
             this.buttonUnit3.TabIndex = 2;
             this.buttonUnit3.Text = "Unit 3";
             this.buttonUnit3.UseVisualStyleBackColor = true;
@@ -117,9 +120,10 @@ namespace Dictionary
             // 
             // buttonUnit2
             // 
-            this.buttonUnit2.Location = new System.Drawing.Point(129, 12);
+            this.buttonUnit2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonUnit2.Location = new System.Drawing.Point(129, 7);
             this.buttonUnit2.Name = "buttonUnit2";
-            this.buttonUnit2.Size = new System.Drawing.Size(111, 40);
+            this.buttonUnit2.Size = new System.Drawing.Size(115, 50);
             this.buttonUnit2.TabIndex = 1;
             this.buttonUnit2.Text = "Unit 2";
             this.buttonUnit2.UseVisualStyleBackColor = true;
@@ -127,9 +131,10 @@ namespace Dictionary
             // 
             // buttonUnit1
             // 
-            this.buttonUnit1.Location = new System.Drawing.Point(12, 12);
+            this.buttonUnit1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonUnit1.Location = new System.Drawing.Point(12, 7);
             this.buttonUnit1.Name = "buttonUnit1";
-            this.buttonUnit1.Size = new System.Drawing.Size(111, 40);
+            this.buttonUnit1.Size = new System.Drawing.Size(115, 50);
             this.buttonUnit1.TabIndex = 0;
             this.buttonUnit1.Text = "Unit 1";
             this.buttonUnit1.UseVisualStyleBackColor = true;
@@ -164,7 +169,7 @@ namespace Dictionary
             this.flowLayoutPanelSmall.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanelSmall.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanelSmall.Name = "flowLayoutPanelSmall";
-            this.flowLayoutPanelSmall.Padding = new System.Windows.Forms.Padding(40, 15, 0, 0);
+            this.flowLayoutPanelSmall.Padding = new System.Windows.Forms.Padding(5);
             this.flowLayoutPanelSmall.Size = new System.Drawing.Size(214, 674);
             this.flowLayoutPanelSmall.TabIndex = 0;
             // 

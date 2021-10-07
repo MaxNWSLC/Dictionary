@@ -16,47 +16,62 @@ namespace Dictionary
         {
             InitializeComponent();
         }
-        private void ButtonDestroy()
+
+        //flowLayoutPanelBig
+        void PopulateTheBigPanel(Object sender, EventArgs e)
         {
-            flowLayoutPanelSmall.Controls.Clear();
+            Button clickedButton = (Button)sender;
+            Label labsel = new Label();
+            labsel.AutoSize = true;
+
+            flowLayoutPanelBig.Controls.Clear();
+            labsel.Text = $"Oppa! \n\t{clickedButton.Text}";
+            flowLayoutPanelBig.Controls.Add(labsel);
         }
-        private void ButtonMake(int n)
+
+
+        //-------------Buttons==========//
+        private void ButtonMake(int n, object sender, EventArgs e)
         {
-            ButtonDestroy();
+            PopulateTheBigPanel(sender, e);
+            flowLayoutPanelSmall.Controls.Clear();
             for (int i = 0; i < n; i++)
             {
                 Button button = new Button();
                 button.Name = $"brutton{i}";
                 button.Text = $"Brutton_{i+1}";
-                button.Width = 116;
-                button.Height = 40;
+                button.Width = 200;
+                button.Height = 50;
+                button.BackColor = Color.White;
+                button.Click += new EventHandler(this.PopulateTheBigPanel);
                 flowLayoutPanelSmall.Controls.Add(button);
             }
         }
 
+
         private void buttonUnit1_Click(object sender, EventArgs e)
         {
-            ButtonMake(1);
+            ButtonMake(1, sender, e);
         }
 
         private void buttonUnit2_Click(object sender, EventArgs e)
         {
-            ButtonMake(2);
+            ButtonMake(2, sender, e);
         }
 
         private void buttonUnit3_Click(object sender, EventArgs e)
         {
-            ButtonMake(3);
+            ButtonMake(3, sender, e);
         }
 
         private void buttonUnit4_Click(object sender, EventArgs e)
         {
-            ButtonMake(4);
+            ButtonMake(4, sender, e);
         }
 
         private void buttonUnit5_Click(object sender, EventArgs e)
         {
-            ButtonMake(5);
+            ButtonMake(5, sender, e);
         }
     }
 }
