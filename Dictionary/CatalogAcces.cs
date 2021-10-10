@@ -18,7 +18,7 @@ namespace Dictionary
 
 
         /// <summary>
-        /// Is getting data from the SQLite database
+        /// Getting data from the SQLite database
         /// </summary>
         /// <param name="unit">number of the Unit</param>
         /// <returns>Array with all information about certain Unit from the params</returns>
