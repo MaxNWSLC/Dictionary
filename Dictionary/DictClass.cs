@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Dictionary
+﻿namespace Dictionary
 {
     class DictClass
     {
@@ -12,6 +8,20 @@ namespace Dictionary
         private string info;
         private string pic;
         private string link;
+
+        public DictClass(int id)
+        {
+            this.id = id;
+        }
+
+        public DictClass(int unit, string name, string info, string pic, string link)
+        {
+            this.unit = unit;
+            this.name = name;
+            this.info = info;
+            this.pic = pic;
+            this.link = link;
+        }
 
         public DictClass(int id, int unit, string name, string info, string pic, string link)
         {

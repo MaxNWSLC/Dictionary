@@ -1,18 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Dictionary
 {
     public partial class Form1 : Form
     {
+        #region Initialization
+
         private Color primaryBack = Color.MediumAquamarine;
         private Color primaryFont = Color.DarkGreen;
         private Color primarySelect = Color.MediumSeaGreen;
@@ -34,6 +32,8 @@ namespace Dictionary
 
             unitArray = ca.GetInfoByUnit();
         }
+        #endregion
+        #region Methods
 
         /// <summary>
         /// We populate the BigPanel with the info from the unitArray 
@@ -183,42 +183,70 @@ namespace Dictionary
             }
             sideBtns = tempBtn;
         }
+        #endregion
+        #region Buttons
 
-
+        /// <summary>
+        /// Unit 1 Button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonUnit1_Click(object sender, EventArgs e)
         {
             unitArray = ca.GetInfoByUnit(1);
             ButtonMake(unitArray.Length, sender, e);
         }
-
+        /// <summary>
+        /// Unit 2 Button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonUnit2_Click(object sender, EventArgs e)
         {
             unitArray = ca.GetInfoByUnit(2);
             ButtonMake(unitArray.Length, sender, e);
         }
-
+        /// <summary>
+        /// Unit 3 Button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonUnit3_Click(object sender, EventArgs e)
         {
             unitArray = ca.GetInfoByUnit(3);
             ButtonMake(unitArray.Length, sender, e);
         }
-
+        /// <summary>
+        /// Unit 4 Button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonUnit4_Click(object sender, EventArgs e)
         {
             unitArray = ca.GetInfoByUnit(4);
             ButtonMake(unitArray.Length, sender, e);
         }
-
+        /// <summary>
+        /// Unit 5 Button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonUnit5_Click(object sender, EventArgs e)
         {
             unitArray = ca.GetInfoByUnit(5);
             ButtonMake(unitArray.Length, sender, e);
         }
-
+        /// <summary>
+        /// Button to acces Create, Update and Delete Form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonSettings_Click(object sender, EventArgs e)
         {
             Form2 help = new Form2();
             help.ShowDialog();
         }
+
+        #endregion
     }
 }

@@ -68,7 +68,7 @@ namespace Dictionary
             this.buttonSettings.Name = "buttonSettings";
             this.buttonSettings.Size = new System.Drawing.Size(120, 85);
             this.buttonSettings.TabIndex = 5;
-            this.buttonSettings.Text = "Settings";
+            this.buttonSettings.Text = "Update";
             this.buttonSettings.UseVisualStyleBackColor = false;
             this.buttonSettings.Click += new System.EventHandler(this.buttonSettings_Click);
             // 
@@ -144,6 +144,7 @@ namespace Dictionary
             // 
             // flowLayoutPanelSmall
             // 
+            this.flowLayoutPanelSmall.AutoScroll = true;
             this.flowLayoutPanelSmall.BackColor = System.Drawing.Color.LightGray;
             this.flowLayoutPanelSmall.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanelSmall.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
