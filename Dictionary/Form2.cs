@@ -262,12 +262,63 @@ namespace Dictionary
         /// <param name="e"></param>
         private void button7_Click(object sender, EventArgs e)
         {
-            id = Int32.Parse(textBox4.Text);
+            try
+            {
+                id = Int32.Parse(textBox4.Text);
+                if (id < 29 && id > 1)
+                {
+                    MessBox("protected");
+                }else if(id<1)
+                {
+                    MessBox("negative");
+                }
+                else
+                {
+                    var war = MessageBox.Show(@"Are you sure?
+If you delete the field 
+all information will be gone!", "Warrning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    if (war == DialogResult.Yes)
+                    {
+                        DictClass deleteField = new DictClass(id);
+                        ca.DeleteField(deleteField);
+                        this.Close();
+                    }
+                }
+            }
+            catch (FormatException)
+            {
+                MessBox("letter");
+            }
+        }
 
-            DictClass updateField = new DictClass(id);
-            ca.DeleteField(updateField);
-
-            this.Close();
+        /// <summary>
+        /// Error Messages.
+        /// </summary>
+        /// <param name="why"></param>
+        private void MessBox(string why)
+        {
+            string text = "Something went wrong!";
+            switch (why)
+            {
+                case "letter":
+                    text += @"
+That doesn't look like a number.";
+                    break;
+                case "negative":
+                    text += @"
+The ID can't be smaller than 1";
+                    break;
+                case "protected":
+                    text += @"
+You are not able to delete
+protected fields";
+                    break;
+                default:
+                    text += @"
+check the ID you've entered";
+                    break;
+            }
+            MessageBox.Show(text, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         /// <summary>
