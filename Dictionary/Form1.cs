@@ -87,7 +87,7 @@ namespace Dictionary
             if (unitArray[index].Pic != "picture")
             {
                 PictureBox pic = new PictureBox();
-                Image newImage = Image.FromFile($"{unitArray[index].Pic}");
+                Image newImage = Image.FromFile($"Pictures/{unitArray[index].Pic}");
                 pic.Image = newImage;
                 pic.Width = 400;
                 pic.Height = 300;
